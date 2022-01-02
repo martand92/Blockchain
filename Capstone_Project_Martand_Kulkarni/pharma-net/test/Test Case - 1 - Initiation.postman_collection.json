@@ -1,0 +1,416 @@
+{
+	"info": {
+		"_postman_id": "fcbd5e48-3418-4b3e-b14d-0c5ef8621c28",
+		"name": "Test Case - 1 : Initiation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Identity",
+			"item": [
+				{
+					"name": "consumer_addToWallet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"certificatePath\" : \"/Users/m0k01h7/OneDrive - Walmart Inc/Docs/Adhoc/JS/Fabric/capstone_new/network/crypto-config/peerOrganizations/consumer.pharma-network.com/users/Admin@consumer.pharma-network.com/msp/signcerts/Admin@consumer.pharma-network.com-cert.pem\",\n    \"privateKeyPath\" : \"/Users/m0k01h7/OneDrive - Walmart Inc/Docs/Adhoc/JS/Fabric/capstone_new/network/crypto-config/peerOrganizations/consumer.pharma-network.com/users/Admin@consumer.pharma-network.com/msp/keystore/a88fbb39098ae951dfcb301516e86b4ccab600c99fdb288fe27a96101b855246_sk\",\n    \"org\": \"consumer\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/addToWallet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"addToWallet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "manufacturer_addToWallet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"certificatePath\" : \"/Users/m0k01h7/OneDrive - Walmart Inc/Docs/Adhoc/JS/Fabric/capstone_new/network/crypto-config/peerOrganizations/manufacturer.pharma-network.com/users/Admin@manufacturer.pharma-network.com/msp/signcerts/Admin@manufacturer.pharma-network.com-cert.pem\",\n    \"privateKeyPath\" : \"/Users/m0k01h7/OneDrive - Walmart Inc/Docs/Adhoc/JS/Fabric/capstone_new/network/crypto-config/peerOrganizations/manufacturer.pharma-network.com/users/Admin@manufacturer.pharma-network.com/msp/keystore/30ba2002e21e7e8f64c87c8238b8b6addbbff5acfdf2a21c42456d7724a8439c_sk\",\n    \"org\": \"manufacturer\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/addToWallet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"addToWallet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "retailer_addToWallet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"certificatePath\" : \"/Users/m0k01h7/OneDrive - Walmart Inc/Docs/Adhoc/JS/Fabric/capstone_new/network/crypto-config/peerOrganizations/retailer.pharma-network.com/users/Admin@retailer.pharma-network.com/msp/signcerts/Admin@retailer.pharma-network.com-cert.pem\",\n    \"privateKeyPath\" : \"/Users/m0k01h7/OneDrive - Walmart Inc/Docs/Adhoc/JS/Fabric/capstone_new/network/crypto-config/peerOrganizations/retailer.pharma-network.com/users/Admin@retailer.pharma-network.com/msp/keystore/c49431880bc0bd899364efcbcade65500aef28ac49f1ccf9e67a5b826e8cfeba_sk\",\n    \"org\": \"retailer\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/addToWallet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"addToWallet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "transporter_addToWallet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"certificatePath\" : \"/Users/m0k01h7/OneDrive - Walmart Inc/Docs/Adhoc/JS/Fabric/capstone_new/network/crypto-config/peerOrganizations/transporter.pharma-network.com/users/Admin@transporter.pharma-network.com/msp/signcerts/Admin@transporter.pharma-network.com-cert.pem\",\n    \"privateKeyPath\" : \"/Users/m0k01h7/OneDrive - Walmart Inc/Docs/Adhoc/JS/Fabric/capstone_new/network/crypto-config/peerOrganizations/transporter.pharma-network.com/users/Admin@transporter.pharma-network.com/msp/keystore/57a421d476c7349db245e72fe4a502f22940f6032b0672619d5e5ba7ac6dd34c_sk\",\n    \"org\": \"transporter\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/addToWallet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"addToWallet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "distributor_addToWallet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"certificatePath\" : \"/Users/m0k01h7/OneDrive - Walmart Inc/Docs/Adhoc/JS/Fabric/capstone_new/network/crypto-config/peerOrganizations/distributor.pharma-network.com/users/Admin@distributor.pharma-network.com/msp/signcerts/Admin@distributor.pharma-network.com-cert.pem\",\n    \"privateKeyPath\" : \"/Users/m0k01h7/OneDrive - Walmart Inc/Docs/Adhoc/JS/Fabric/capstone_new/network/crypto-config/peerOrganizations/distributor.pharma-network.com/users/Admin@distributor.pharma-network.com/msp/keystore/a4fb314596aeacf354653eec0f26709ff3454ea0040082f37bf745c34bab3629_sk\",\n    \"org\": \"distributor\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/addToWallet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"addToWallet"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Registration",
+			"item": [
+				{
+					"name": "manufacturerRegistration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"companyCRN\" : \"MAN001\",\n    \"companyName\" : \"Sun Pharma\",\n    \"location\": \"Chennai\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/registerManufacturer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"registerManufacturer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "transporterRegistration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"companyCRN\" : \"TRA001\",\n    \"companyName\" : \"FedEx\",\n    \"location\": \"Delhi\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/registerTransporter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"registerTransporter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "transporterRegistration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"companyCRN\" : \"TRA002\",\n    \"companyName\" : \"Blue Dart\",\n    \"location\": \"Bangalore\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/registerTransporter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"registerTransporter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "distributorRegistration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"companyCRN\" : \"DIST001\",\n    \"companyName\" : \"VG Pharma\",\n    \"location\": \"Vizag\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/registerDistributor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"registerDistributor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "retailerRegistration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"companyCRN\" : \"RET002\",\n    \"companyName\" : \"upgrad\",\n    \"location\": \"Mumbai\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/registerRetailer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"registerRetailer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Add Drug",
+			"item": [
+				{
+					"name": "addDrug_001",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"drugName\":\"paracetamol\",\n    \"serialNo\" : \"001\",\n    \"mfgDate\" : \"mfgDate2021\",\n    \"expDate\": \"expDate2022\",\n    \"companyCRN\":\"MAN001\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/addDrugByManufacturer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"addDrugByManufacturer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addDrug_002",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"drugName\":\"paracetamol\",\n    \"serialNo\" : \"002\",\n    \"mfgDate\" : \"mfgDate2021\",\n    \"expDate\": \"expDate2022\",\n    \"companyCRN\":\"MAN001\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/addDrugByManufacturer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"addDrugByManufacturer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addDrug_003",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"drugName\":\"paracetamol\",\n    \"serialNo\" : \"003\",\n    \"mfgDate\" : \"mfgDate2021\",\n    \"expDate\": \"expDate2022\",\n    \"companyCRN\":\"MAN001\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/addDrugByManufacturer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"addDrugByManufacturer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addDrug_004",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"drugName\":\"paracetamol\",\n    \"serialNo\" : \"004\",\n    \"mfgDate\" : \"mfgDate2021\",\n    \"expDate\": \"expDate2022\",\n    \"companyCRN\":\"MAN001\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/addDrugByManufacturer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"addDrugByManufacturer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

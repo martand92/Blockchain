@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "aab120e0-2132-48a4-809b-b457f0e1e2b7",
+		"name": "Test Case - 2 : SupplyChain",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Part a",
+			"item": [
+				{
+					"name": "PurchaseOrder by  VG Pharma",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"buyerCRN\" : \"DIST001\",\n    \"sellerCRN\" : \"MAN001\",\n    \"drugName\": \"paracetamol\",\n    \"quantity\" : \"3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/createPOByDistributor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"createPOByDistributor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Shipment created by Sun Pharma",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"buyerCRN\" : \"DIST001\",\n    \"drugName\" : \"paracetamol\",\n    \"listOfAssets\": \"[\\\"paracetamol-001\\\",\\\"paracetamol-002\\\",\\\"paracetamol-003\\\" ]\",\n    \"transporterCRN\" : \"TRA001\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/createShipmentByManufacturer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"createShipmentByManufacturer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Shipment delivered by FedEx",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"buyerCRN\" : \"DIST001\",\n    \"drugName\" : \"paracetamol\",\n    \"transporterCRN\" : \"TRA001\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/updateShipmentByTransporter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"updateShipmentByTransporter"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Part b",
+			"item": [
+				{
+					"name": "PurchaseOrder by  upgrad",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"buyerCRN\" : \"RET002\",\n    \"sellerCRN\" : \"DIST001\",\n    \"drugName\": \"paracetamol\",\n    \"quantity\" : \"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/createPOByRetailer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"createPOByRetailer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Shipment created by VG Pharma",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"buyerCRN\" : \"RET002\",\n    \"drugName\" : \"paracetamol\",\n    \"listOfAssets\": \"[\\\"paracetamol-001\\\",\\\"paracetamol-002\\\" ]\",\n    \"transporterCRN\" : \"TRA002\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/createShipmentByDistributor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"createShipmentByDistributor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Shipment delivered by BlueDart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"buyerCRN\" : \"RET002\",\n    \"drugName\" : \"paracetamol\",\n    \"transporterCRN\" : \"TRA002\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/updateShipmentByTransporter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"updateShipmentByTransporter"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Part c",
+			"item": [
+				{
+					"name": "Consumer buying drug",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"drugName\" : \"paracetamol\",\n    \"serialNo\" : \"001\",\n    \"retailerCRN\": \"RET002\",\n    \"customerAadhar\" : \"AAD001\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/retailDrugByRetailer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"retailDrugByRetailer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
